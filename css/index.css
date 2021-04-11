@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar  {
+    width: 2px;
+  }
+::-webkit-scrollbar-track {
+    border: 9px solid #0b0c13;
+    box-shadow: inset 0 0 2.5px 2px rgb(0, 0, 0);
+  }
+::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle at 50% -20.71%, #ef9437 0, #f48838 10%, #f77b3a 20%, #f96c3d 30%, #fa5b41 40%, #f94646 50%, #f72c4c 60%, #f40054 70%, #f0005e 80%, #ea0069 90%, #e30075 100%);
+    border-radius: 3px;
+}
+main {
+    height: 100vh;
+    background-image: url(/images/tesla.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.title {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.title p {
+    font-size: 4em;
+    font-weight: 800;
+    color: whitesmoke;
+    margin-left: 30px;  
+}
+
+.mini-title p {
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    margin-left: 30px;
+}
+.roadster {
+    height: 100vh;
+    background-image: url(/images/roadster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.title-roadster {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.title-roadster p {
+    font-size: 4em;
+    font-weight: 800;
+    margin-right: 30px;  
+    color: whitesmoke;
+}
+.mini-title-roadster {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.mini-title-roadster p {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-right: 30px;
+    text-align: right;
+    color: white;
+}
+.lamb {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/lamb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.news {
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width:360px){
+    .title p{
+        font-size: 3em;
+    }
+    .title-roadster p  {
+        font-size: 2em;
+    }
+    .mini-title-roadster p {
+        font-size: 0.5em;
+    }
+}
